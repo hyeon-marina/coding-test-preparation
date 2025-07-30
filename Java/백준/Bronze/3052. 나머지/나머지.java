@@ -1,15 +1,17 @@
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Set<Integer> set = new HashSet<>();
+        boolean[] check = new boolean[42];
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 10; i++) {
-            set.add(sc.nextInt() % 42);
+            check[sc.nextInt() % 42] = true;
         }
-        System.out.println(set.size());
+        int count = 0;
+        for (boolean c : check) {
+            if (c) count++;
+        }
+        System.out.println(count);
         sc.close();
     }
 }

@@ -1,225 +1,218 @@
-# Coding Test Preparation / コーディングテスト対策 / 코딩테스트 대비
+# 코딩테스트 준비
+
+알고리즘 문제 해결 능력 향상을 위한 체계적인 학습 레포지토리
+
+## 📚 학습 플랫폼
+- **백준 (BOJ)**: 기초 알고리즘 및 자료구조 학습
+- **LeetCode**: 다양한 알고리즘 패턴 및 면접 대비
+- **AtCoder**: 수학적 사고와 고급 알고리즘
+- **Paiza**: 실무 중심 문제 해결
+
+## 💻 사용 언어 (다언어 비교 학습)
+- **Python**: 간결하고 직관적인 구현
+- **Java**: 객체지향적 접근 및 타입 안정성
+- **C**: 메모리 효율성 및 시스템 레벨 최적화
+
+> 💡 **학습 방식**: 동일한 문제를 3개 언어로 모두 구현하여 언어별 특성과 성능 차이를 비교 분석
+
+## 📊 현재 진행상황
+- **다언어 구현**: 모든 해결 문제를 Python, Java, C로 작성
+- **언어별 비교**: 코드 길이, 실행 시간, 메모리 사용량 분석
+
+### 백준 진행률
+- **Bronze**: 12문제 해결
+  - Python: 12문제 ✅
+  - Java: 12문제 ✅
+  - C: 10문제 ✅ (2문제 진행중)
+- **Silver**: 0문제 해결
+- **Gold**: 0문제 해결
+
+최근 업데이트: 2025년 8월 8일
+
+## 📁 프로젝트 구조
+```
+Python/백준/Bronze/        # Python 구현 (12문제)
+├── 1000. A+B/
+├── 1001. A-B/
+├── 10807. 개수 세기/
+└── ...
+
+Java/백준/Bronze/          # Java 구현 (12문제)
+├── 1330. 두 수 비교하기/
+├── 10171. 고양이/
+├── 10430. 나머지/
+└── ...
+
+C99/백준/Bronze/           # C 구현 (10문제)
+├── 1546. 평균/
+├── 2675. 문자열 반복/
+├── 10809. 알파벳 찾기/
+└── ...
+```
+
+## 🔄 다언어 학습 방식
+1. **문제 선택**: 백준에서 기초부터 차근차근 해결
+2. **순차 구현**: 각 언어의 특성을 살려 구현
+3. **성능 비교**: 실행 시간, 메모리 사용량 측정
+4. **코드 분석**: 각 언어의 특성과 장단점 분석
+5. **문서화**: README 파일로 문제별 상세 기록
+
+## 📖 언어별 학습 포인트
+### Python
+- 간결한 문법과 내장 함수 활용
+- 리스트 컴프리헨션, 슬라이싱 등 파이썬다운 코딩
+- 알고리즘 로직에 집중할 수 있는 환경
+
+### Java
+- 객체지향 설계 패턴 적용
+- Scanner, BufferedReader 등 입출력 최적화
+- 타입 안정성과 예외 처리
+
+### C
+- 메모리 직접 관리를 통한 최적화
+- 포인터와 구조체 활용
+- 시스템 레벨에서의 효율적인 구현
+
+## ✅ 해결 완료 문제 (총 12문제)
+### 🥉 Bronze 문제
+- **1000. A+B** - 기본 입출력
+- **1001. A-B** - 기본 사칙연산
+- **1008. A/B** - 실수 연산
+- **1330. 두 수 비교하기** - 조건문
+- **1546. 평균** - 배열과 수학
+- **2480. 주사위 세개** - 복잡한 조건문
+- **2675. 문자열 반복** - 문자열 처리
+- **2743. 단어 길이 재기** - 문자열 길이
+- **10809. 알파벳 찾기** - 문자열 탐색
+- **10926. ??!** - 문자열 연결
+- **11654. 아스키 코드** - 문자 변환
+- **27866. 문자와 문자열** - 인덱싱
+
+## 📈 진행 현황 추적
+### 언어별 구현 완료율
+- **완전 구현** (3개 언어 모두): 10문제
+- **부분 구현** (1-2개 언어): 2문제
+
+### 최근 해결 문제
+- 2908. 상수 (Python, Java, C)
+- 1152. 단어의 개수 (Python, Java, C)
+- 2675. 문자열 반복 (Python, Java, C)
+
+## 🎯 다음 목표
+- [ ] Bronze 20문제 달성
+- [ ] C언어로 미해결 문제 2개 완성
+- [ ] Silver 첫 문제 도전
+- [ ] 언어별 성능 비교 문서 작성
 
 ---
 
-## 日本語
+# Coding Test Preparation
 
-### 🎯 目標
-日本のAIエンジニア就職のためのアルゴリズム問題解決能力向上
+Systematic learning repository for improving algorithm problem-solving skills
 
-### 📚 学習プラットフォーム
-- **AtCoder**: 日本企業のコーディングテスト対策
-- **Paiza**: 日本就職直結プラットフォーム  
-- **백준 (BOJ)**: 基礎アルゴリズムとデータ構造
-- **LeetCode**: グローバル企業対策
+## 📚 Learning Platforms
+- **BOJ (Baekjoon)**: Fundamental algorithms and data structures
+- **LeetCode**: Various algorithm patterns and interview preparation
+- **AtCoder**: Mathematical thinking and advanced algorithms
+- **Paiza**: Practical problem-solving
 
-### 🐍 使用言語
-- **Python**: 主力言語（AI分野特化）
-- **Java**: 選択的使用（パフォーマンス比較および日本企業対策）
+## 💻 Programming Languages (Multi-language Comparative Learning)
+- **Python**: Concise and intuitive implementation
+- **Java**: Object-oriented approach and type safety
+- **C**: Memory efficiency and system-level optimization
 
-### 📊 現在の進捗状況
+> 💡 **Learning Method**: Implementing the same problem in all 3 languages to compare language characteristics and performance differences
 
-#### 백준 (BOJ)
-- **Python**: 進行中
-- **Java**: 重要問題の選択的解決
+## 📊 Current Progress
+- **Multi-language Implementation**: All solved problems written in Python, Java, and C
+- **Language Comparison**: Analysis of code length, execution time, and memory usage
 
-#### 学習現況
-- **Bronze**: 0/50 (目標)
-- **Silver**: 0/30 (目標)  
-- **Gold**: 0/10 (目標)
+### BOJ Progress
+- **Bronze**: 12 problems solved
+  - Python: 12 problems ✅
+  - Java: 12 problems ✅
+  - C: 10 problems ✅ (2 problems in progress)
+- **Silver**: 0 problems solved
+- **Gold**: 0 problems solved
 
-*最終更新: 2025年7月9日*
+Last updated: August 8, 2025
 
-### 📁 フォルダ構造
-
-#### 自動アップロード（백준허브）
+## 📁 Project Structure
 ```
-Python/
-├── 백준/
-│   ├── Bronze/
-│   ├── Silver/
-│   └── Gold/
-├── AtCoder/
-└── Paiza/
+Python/백준/Bronze/        # Python implementation (12 problems)
+├── 1000. A+B/
+├── 1001. A-B/
+├── 10807. 개수 세기/
+└── ...
 
-Java/
-└── 백준/ (選択的)
+Java/백준/Bronze/          # Java implementation (12 problems)
+├── 1330. 두 수 비교하기/
+├── 10171. 고양이/
+├── 10430. 나머지/
+└── ...
+
+C99/백준/Bronze/           # C implementation (10 problems)
+├── 1546. 평균/
+├── 2675. 문자열 반복/
+├── 10809. 알파벳 찾기/
+└── ...
 ```
 
-#### 手動整理
-- **[featured-problems](./featured-problems/)**: 重要問題の詳細分析
-- **[language-comparisons](./language-comparisons/)**: 言語別比較分析  
-- **[study-notes](./study-notes/)**: 学習ノートとテンプレート
+## 🔄 Multi-language Learning Method
+1. **Problem Selection**: Solving problems step by step starting from basics on BOJ
+2. **Sequential Implementation**: Implementation utilizing characteristics of each language
+3. **Performance Comparison**: Measuring execution time and memory usage
+4. **Code Analysis**: Analyzing characteristics, pros and cons of each language
+5. **Documentation**: Detailed recording of each problem with README files
 
-### 🔗 関連リンク
-- [個人 GitHub](https://github.com/hyeon-marina)
-- [Zenn技術ブログ](https://zenn.dev/hyeon_marina247)
-- [Qiita技術ブログ](https://qiita.com/hyeon)
+## 📖 Language-specific Learning Points
+### Python
+- Utilizing concise syntax and built-in functions
+- Pythonic coding with list comprehensions, slicing, etc.
+- Environment focused on algorithm logic
 
-### 📈 学習計画
-1. **基礎固め** (1-2ヶ月): Bronze ~ Silver問題集中
-2. **深化学習** (3-4ヶ月): Gold問題挑戦 + 言語別比較
-3. **日本プラットフォーム対策** (5-6ヶ月): AtCoder、Paiza集中
-4. **最終整理** (7-8ヶ月): ポートフォリオ完成
+### Java
+- Applying object-oriented design patterns
+- I/O optimization with Scanner, BufferedReader, etc.
+- Type safety and exception handling
 
-### 💡 学習方式
-- **Python優先**: 백준허브自動アップロード
-- **Java補完**: 重要問題のみ選択して手動追加
-- **比較分析**: 同じ問題を両言語で解決後、差異点分析
-- **深化整理**: 困難な問題はfeatured-problemsで詳細分析
+### C
+- Optimization through direct memory management
+- Utilizing pointers and structures
+- Efficient implementation at system level
+
+## ✅ Completed Problems (Total: 12 problems)
+### 🥉 Bronze Problems
+- **1000. A+B** - Basic I/O
+- **1001. A-B** - Basic arithmetic
+- **1008. A/B** - Floating point operations
+- **1330. 두 수 비교하기** - Conditional statements
+- **1546. 평균** - Arrays and mathematics
+- **2480. 주사위 세개** - Complex conditionals
+- **2675. 문자열 반복** - String processing
+- **2743. 단어 길이 재기** - String length
+- **10809. 알파벳 찾기** - String searching
+- **10926. ??!** - String concatenation
+- **11654. 아스키 코드** - Character conversion
+- **27866. 문자와 문자열** - Indexing
+
+## 📈 Progress Tracking
+### Implementation Completion Rate by Language
+- **Full Implementation** (All 3 languages): 10 problems
+- **Partial Implementation** (1-2 languages): 2 problems
+
+### Recently Solved Problems
+- 2908. 상수 (Python, Java, C)
+- 1152. 단어의 개수 (Python, Java, C)
+- 2675. 문자열 반복 (Python, Java, C)
+
+## 🎯 Next Goals
+- [ ] Achieve 20 Bronze problems
+- [ ] Complete 2 unsolved problems in C
+- [ ] Challenge first Silver problem
+- [ ] Write language performance comparison document
 
 ---
 
-## English
-
-### 🎯 Objective
-Improving algorithm problem-solving skills for AI engineer career in Japan
-
-### 📚 Learning Platforms
-- **AtCoder**: Japanese corporate coding test preparation
-- **Paiza**: Direct connection to Japanese employment
-- **백준 (BOJ)**: Fundamental algorithms and data structures
-- **LeetCode**: Global corporate preparation
-
-### 🐍 Programming Languages
-- **Python**: Primary language (AI field specialization)
-- **Java**: Selective use (performance comparison and Japanese corporate preparation)
-
-### 📊 Current Progress
-
-#### 백준 (BOJ)
-- **Python**: In progress
-- **Java**: Selective solving of important problems
-
-#### Learning Status
-- **Bronze**: 0/50 (target)
-- **Silver**: 0/30 (target)
-- **Gold**: 0/10 (target)
-
-*Last updated: July 9, 2025*
-
-### 📁 Folder Structure
-
-#### Automatic Upload (백준허브)
-```
-Python/
-├── 백준/
-│   ├── Bronze/
-│   ├── Silver/
-│   └── Gold/
-├── AtCoder/
-└── Paiza/
-
-Java/
-└── 백준/ (selective)
-```
-
-#### Manual Organization
-- **[featured-problems](./featured-problems/)**: In-depth analysis of important problems
-- **[language-comparisons](./language-comparisons/)**: Language comparison analysis
-- **[study-notes](./study-notes/)**: Study notes and templates
-
-### 🔗 Related Links
-- [Personal GitHub](https://github.com/hyeon-marina)
-- [Zenn Tech Blog](https://zenn.dev/hyeon_marina247)
-- [Qiita Tech Blog](https://qiita.com/hyeon)
-
-### 📈 Learning Plan
-1. **Foundation Building** (1-2 months): Focus on Bronze ~ Silver problems
-2. **Advanced Learning** (3-4 months): Challenge Gold problems + language comparison
-3. **Japanese Platform Preparation** (5-6 months): Focus on AtCoder, Paiza
-4. **Final Organization** (7-8 months): Portfolio completion
-
-### 💡 Learning Methodology
-- **Python Priority**: Automatic upload via 백준허브
-- **Java Supplement**: Manual addition of selected important problems
-- **Comparative Analysis**: Analyze differences after solving same problems in both languages
-- **Deep Analysis**: Detailed analysis of difficult problems in featured-problems
-
----
-
-## 한국어
-
-### 🎯 목표
-일본 AI 엔지니어 취업을 위한 알고리즘 문제 해결 능력 향상
-
-### 📚 학습 플랫폼
-- **AtCoder**: 일본 기업 코딩테스트 대비
-- **Paiza**: 일본 취업 직결 플랫폼
-- **백준 (BOJ)**: 기초 알고리즘 및 자료구조
-- **LeetCode**: 글로벌 기업 대비
-
-### 🐍 사용 언어
-- **Python**: 주력 언어 (AI 분야 특화)
-- **Java**: 선별적 사용 (성능 비교 및 일본 기업 대비)
-
-### 📊 현재 진행 상황
-
-#### 백준 (BOJ)
-- **Python**: 진행 중
-- **Java**: 중요 문제 선별적 해결
-
-#### 학습 현황
-- **Bronze**: 0/50 (목표)
-- **Silver**: 0/30 (목표)
-- **Gold**: 0/10 (목표)
-
-*최근 업데이트: 2025년 7월 9일*
-
-### 📁 폴더 구조
-
-#### 자동 업로드 (백준허브)
-```
-Python/
-├── 백준/
-│   ├── Bronze/
-│   ├── Silver/
-│   └── Gold/
-├── AtCoder/
-└── Paiza/
-
-Java/
-└── 백준/ (선별적)
-```
-
-#### 수동 정리
-- **[featured-problems](./featured-problems/)**: 중요 문제 심화 분석
-- **[language-comparisons](./language-comparisons/)**: 언어별 비교 분석
-- **[study-notes](./study-notes/)**: 학습 노트 및 템플릿
-
-### 🔗 관련 링크
-- [개인 GitHub](https://github.com/hyeon-marina)
-- [Zenn 기술 블로그](https://zenn.dev/hyeon_marina247)
-- [Qiita 기술 블로그](https://qiita.com/hyeon)
-
-### 📈 학습 계획
-1. **기초 다지기** (1-2개월): Bronze ~ Silver 문제 집중
-2. **심화 학습** (3-4개월): Gold 문제 도전 + 언어별 비교
-3. **일본 플랫폼 대비** (5-6개월): AtCoder, Paiza 집중
-4. **최종 정리** (7-8개월): 포트폴리오 완성
-
-### 💡 학습 방식
-- **Python 우선**: 백준허브 자동 업로드
-- **Java 보완**: 중요 문제만 선별하여 수동 추가
-- **비교 분석**: 같은 문제를 두 언어로 해결 후 차이점 분석
-- **심화 정리**: 어려운 문제는 featured-problems에서 상세 분석
-
----
-
-## 📊 진행 상황 추적 / Progress Tracking / 進捗追跡
-
-### 2025년 7월 / July 2025 / 2025年7月
-- [ ] 백준허브 설정 완료 / BaekjoonHub setup / 백준허브設定完了
-- [ ] 첫 번째 문제 해결 / First problem solved / 初問題解決
-- [ ] Bronze 5문제 달성 / 5 Bronze problems / Bronze 5問題達成
-
-### 월간 목표 / Monthly Goals / 月間目標
-- **7월**: 환경 설정 + Bronze 10문제
-- **8월**: Bronze 20문제 + Silver 5문제 + Java 3문제
-- **9월**: Silver 10문제 + featured-problems 3개
-
----
-
-*이 리포지토리는 지속적으로 업데이트됩니다.*  
-*This repository is continuously updated.*  
-*このリポジトリは継続的に更新されます。*
+*이 레포지토리는 지속적으로 업데이트됩니다.*  
+*This repository is continuously updated.*

@@ -1,70 +1,4 @@
-# Study Notes / 学習ノート / 학습 노트
-
----
-
-## 日本語
-
-### 📚 概要
-アルゴリズム学習過程で整理したノートです。
-
-### 📂 内容
-
-#### アルゴリズム理論
-- アルゴリズム別の核心概念
-- 時間・空間計算量の分析
-- データ構造の活用法
-- 設計パターンとベストプラクティス
-
-#### コードテンプレート
-- よく使用するコードスニペット
-- 標準入出力テンプレート
-- エラーハンドリングパターン
-- デバッグ用ユーティリティ
-
-#### 学習記録
-- 間違いやすい部分の整理
-- パフォーマンス最適化のコツ
-- 言語固有の注意点
-- 実際のコーディングテストでの経験
-
-### 🎯 活用方法
-- 復習用リファレンス
-- コーディングテスト直前の確認
-- 新しい概念学習時の参考
-- 問題解決戦略の体系化
-
----
-
-## English
-
-### 📚 Overview
-Notes organized during the algorithm learning process.
-
-### 📂 Contents
-
-#### Algorithm Theory
-- Core concepts by algorithm type
-- Time and space complexity analysis
-- Data structure utilization methods
-- Design patterns and best practices
-
-#### Code Templates
-- Frequently used code snippets
-- Standard I/O templates
-- Error handling patterns
-- Debugging utilities
-
-#### Learning Records
-- Common mistake patterns
-- Performance optimization tips
-- Language-specific considerations
-- Real coding test experiences
-
-### 🎯 Usage
-- Reference for review
-- Pre-coding test checklist
-- Reference for learning new concepts
-- Systematizing problem-solving strategies
+# 학습 노트 / Study Notes
 
 ---
 
@@ -98,3 +32,36 @@ Notes organized during the algorithm learning process.
 - 코딩테스트 직전 점검
 - 새로운 개념 학습 시 참고
 - 문제 해결 전략 체계화
+
+---
+
+## English
+
+### 📚 Overview
+Notes organized during the algorithm learning process.
+
+### 📂 Contents
+
+#### Algorithm Theory
+- Core concepts by algorithm type
+- Time and space complexity analysis
+- Data structure utilization methods
+- Design patterns and best practices
+
+#### Code Templates
+- Frequently used code snippets
+- Standard I/O templates
+- Error handling patterns
+- Debugging utilities
+
+#### Learning Records
+- Common mistake patterns
+- Performance optimization tips
+- Language-specific considerations
+- Real coding test experiences
+
+### 🎯 Usage
+- Reference for review
+- Pre-coding test checklist
+- Reference for learning new concepts
+- Systematizing problem-solving strategies

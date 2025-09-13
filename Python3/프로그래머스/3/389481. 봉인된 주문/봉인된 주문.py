@@ -1,39 +1,49 @@
+import bisect
+
 def solution(n, bans):
-    from bisect import bisect_left
-    # bans를 길이별로 분류하고 정렬
-    by_len = {}
-    for b in bans:
-        by_len.setdefault(len(b), []).append(b)
-    for k in by_len:
-        by_len[k].sort()
+    MAX_L = 11
+    ALPH = 26
 
-    # 1) 전체 길이별 가능 수와 삭제 수로 n 위치 조정
-    L = 1
-    remain = n
-    while True:
-        total = 26 ** L
-        removed = len(by_len.get(L, []))
-        if remain <= total - removed:
-            break
-        remain -= (total - removed)
-        L += 1
+    pow26 = [1] * (MAX_L + 1)
+    for i in range(1, MAX_L + 1):
+        pow26[i] = pow26[i-1] * ALPH
 
-    # 2) 삭제된 문자열이 lexicographically 이전인 개수 계산
-    ban_list = by_len.get(L, [])
-    cnt_before = bisect_left(ban_list, "")  # 빈 문자열은 placeholder
-    # 대신 밴 리스트 내 문자열을 하나씩 비교
-    cnt_before = 0
-    for b in ban_list:
-        # b가 전체 범위 내에서 remain보다 앞선다면 제외해서 remain 증가
-        idx = sum(26 ** (L - i - 1) * (ord(b[i]) - ord('a')) for i in range(L)) + 1
-        if idx <= remain + cnt_before:
-            cnt_before += 1
+    # 문자열 → 인덱스 (1-based)
+    def str_to_idx(s: str) -> int:
+        l = len(s)
+        tot = sum(pow26[1:l])  # 길이 l 미만 문자열 개수
+        val = 0
+        for ch in s:
+            val = val * ALPH + (ord(ch) - ord('a'))
+        return tot + val + 1
 
-    target_idx = remain + cnt_before - 1  # 0-based 인덱스
+    # 인덱스 → 문자열
+    def idx_to_str(idx: int) -> str:
+        tot = 0
+        for l in range(1, MAX_L + 1):
+            if tot + pow26[l] >= idx:
+                break
+            tot += pow26[l]
+        offset = idx - tot - 1
+        chars = []
+        for _ in range(l):
+            chars.append(chr(ord('a') + (offset % ALPH)))
+            offset //= ALPH
+        return "".join(reversed(chars))
 
-    # 3) target_idx에 해당하는 문자열 생성
-    res = []
-    for _ in range(L):
-        div, target_idx = divmod(target_idx, 26 ** (L - len(res) - 1))
-        res.append(chr(ord('a') + div))
-    return ''.join(res)
+    ban_indices = [str_to_idx(b) for b in bans]
+    ban_indices.sort()
+
+    total_strings = sum(pow26[1:])  # 전체 문자열 수
+
+    lo, hi = 1, total_strings
+    while lo < hi:
+        mid = (lo + hi) // 2
+        cnt_bans = bisect.bisect_right(ban_indices, mid)
+        effective = mid - cnt_bans
+        if effective < n:
+            lo = mid + 1
+        else:
+            hi = mid
+
+    return idx_to_str(lo)
